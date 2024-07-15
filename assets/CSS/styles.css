@@ -1,0 +1,144 @@
+/*----------------RESET---------------*/
+/*Effacer tout le style par defaut du navigateur que je ne souhaite pas avoir sur mon site*/
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+*{ /*permet de selectionner tout les element html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------START -- Stylisation-------*/
+
+body{
+    margin: 40px;
+}
+/*----------START -- NAV BAR----------*/
+.nav{
+    display: flex;
+}
+
+.nav img{
+    height: 200px;
+    border-radius: 50%;
+}
+.nav_bar{
+    width: 150vh;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    justify-content: space-around;
+    background:linear-gradient( 90deg,#18c4e2, #fbfaf8 );    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s;
+    padding: 10px;
+    border-top-left-radius: 20px;
+}
+
+nav li{
+    flex-wrap: wrap;
+}
+
+/*----------END -- NAV BAR---------*/
+
+/*-------------Main----------------*/
+.container{
+    display: flex;
+    
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+h1 p{
+    text-align: justify;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    margin: 10px;
+}
+.colonne_gauche{
+    width: 30%;
+    margin: 20px;
+}
+.colonne_droite{
+    width: 70%;
+    margin-block-end: 20px;
+    
+}
+
+h3{
+    background:linear-gradient( 90deg, #18c4e2, #fbfaf8 );    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    border-bottom: 10px;
+    margin: 5% 0;
+
+}
+
+#soft_kills{
+    padding-left: 20px;
+}
+
+#progress_bar{
+    width: 250px;
+    height: 20px;
+    border: 1px solid #18c4e2;
+    position: relative;
+    border-radius: 20px;
+}
+#progress_bar::before{/*precision par rapport a l'element parent*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #18c4e2;
+    content: "";
+    border-radius: 20px;
+}
+.experiences{
+    background-color: blue;
+}
+
+/*-------------------END  -- MAIN--------------------*/
+
+/*--------------------START -- FOOTER----------------*/
+footer{
+    text-align: center;
+    
+}
+.linkedin, .portefolio, .facebook{
+    width: 30px;
+    margin: 20px;
+}
+.icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/*--------------------END -- FOOTER----------------*/
+
+
+
+
